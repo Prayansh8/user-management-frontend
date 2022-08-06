@@ -1,6 +1,9 @@
 console.log("Hello api js");
 
-const apiHostname = "http://localhost:3000"
+let apiHostname = "https://user-mgmtmg.herokuapp.com"
+if (window.location.hostname === 'localhost') {
+    apiHostname = 'http://localhost:3000';
+}
 
 // user singup
 
